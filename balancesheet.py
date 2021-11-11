@@ -1,14 +1,3 @@
-land = float(00.00)
-equipment = float(00.00)
-vehicles = float(00.00)
-stock = float(00.00)
-debtors = float(00.00)
-bank = float(00.00)
-cash = float(00.00)
-creditor = float(00.00)
-accruels = float(00.00)
-working_capital = float(00.00)
-
 non_con_assets = {
     'land' : float(00.00), 
     'equipment' : float(00.00), 
@@ -19,5 +8,10 @@ non_con_assets = {
     }
 
 for key, value in non_con_assets.items():
-    float(input(key + ' '))
+    non_con_amount = input(key + ': ')
+    non_con_assets.update(non_con_amount)
+    
+
+        
+
 
