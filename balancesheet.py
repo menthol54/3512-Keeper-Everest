@@ -1,7 +1,8 @@
 import json
 import datetime
+import os
+
 now = datetime.datetime.now()
-file_number = 0
 land = 00 
 equipment = 00 
 vehicles = 00
@@ -28,15 +29,11 @@ new_val = {
     'non_cur_assets': non_cur_assets,
 }
 
-    
-ba = open(f'bal_sheets/balancesheet.json{file_number}', 'w')
-
-json.dump(new_val, ba, indent = 6)
-
-ba.close()
-    
-    
-
-        
-
+file_number = int(0)
+if os.path.exists(f'bal_sheets/balancesheet{file_number}.json') == True:
+    for file_number in range(int(file_number)):
+        file_number += 1
+    ba = open(f'bal_sheets/balancesheet{file_number}.json', 'w+')
+    json.dump(new_val, ba, indent = 6)
+    ba.close()
 
