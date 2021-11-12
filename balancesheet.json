@@ -1,0 +1,9 @@
+{
+      "land": 5,
+      "equipment": 5,
+      "vehicles": 5,
+      "furniture": 5,
+      "buildings": 5,
+      "machinery": 5,
+      "non_cur_assets": 30
+}
